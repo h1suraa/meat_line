@@ -1,0 +1,183 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BIZ+UDPMincho&display=swap');
+
+
+
+
+
+
+
+
+.header__menu{
+    background: url('../img/menu/header/bg.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 343px;
+    min-height: 100vh;
+}
+
+.header__title_menu{
+    color: rgb(151, 243, 255);
+}
+
+.header__description_menu{
+    color: rgb(151, 243, 255);
+}
+
+.header__decorline_menu{
+    border: 1px solid rgb(151, 243, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu{
+    margin-top: 145px;
+}
+
+.menu__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__text_title{
+    color: rgb(151, 243, 255);
+    font-family: Arimo;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 3px;
+    text-align: cemter;
+    margin-bottom: 69px;
+}
+
+.menu__text_list{
+    margin-bottom: 73px;
+}
+
+.menu__text_item{
+    color: rgb(255, 255, 255);
+    font-family: Arimo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.menu__text_item:last-child{
+    margin-bottom: 0;
+}
+
+.menu__text_description{
+    color: rgb(255, 255, 255);
+    font-family: Arimo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+
+
+
+.wine{
+    margin-top: 145px;
+    position: relative;
+}
+
+.wine__row{
+    justify-content: right;
+}
+
+.wine__title{
+    color: rgb(151, 243, 255);
+    font-family: Arimo;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 62px;
+}
+
+.wine__description{
+    color: rgb(255, 255, 255);
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 15%;
+    text-align: left;
+    max-width: 420px;
+    background-color: rgb(69, 69, 69);
+    padding: 50px 48px;
+    position: absolute;
+    top: 386px;
+
+}

@@ -1,0 +1,469 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BIZ+UDPMincho&display=swap');
+
+
+
+body{
+    background-color: #313131;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1245px;
+    margin: 0 auto;
+}
+
+/*---reserve start---*/
+
+.reserve__button_wrapper{
+	position: absolute;
+	left: 47px;
+	top: 56px;
+	z-index: 100;
+}
+.reserve__button_image{
+	margin-right: 25px;
+}
+.reserve__button_row{
+	display: flex;
+	align-items: center;
+}
+.reserve__button_text{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 5%;
+}
+
+.reserve{
+	position: absolute;
+	z-index: 100;
+	padding: 31px 35px;
+	background-color: rgb(43, 72, 76);
+	max-width: 813px;
+	height: 100vh;
+    top: 0;
+	left: -813px;
+	transition: 0.7s;
+}
+
+.header.open .reserve{
+	transform: translateX(100%);
+}
+
+.reserve__column{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+
+.reserve__title{
+	margin-bottom: 38px;
+	display: flex;
+	align-items: center;
+}
+.reserve__title p{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 4px;
+	margin-right: 280px;
+}
+
+.reserve__subtitle{
+	margin-bottom: 67px;
+}
+.reserve__subtitle p{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 3px;
+	
+}
+
+
+.reserve__form_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.reserve__label{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 3px;
+	text-align: left;
+	margin-bottom: 9px;
+}
+.reserve__input_main{
+	border-radius: 3px;
+	background: rgb(218, 251, 255);
+	padding: 9px 11px;
+	color: black;
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 11px;
+	text-align: left;
+	width: 595px;
+	margin-bottom: 37px;
+}
+.reserve__input_double{
+	border-radius: 3px;
+	background: rgb(218, 251, 255);
+	padding: 9px 11px;
+	color: black;
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 11px;
+	text-align: left;
+	width: 280px;
+	margin-bottom: 37px;
+	margin-right: 35px;
+}
+.reserve__input_double:last-child{
+	margin-right: 0;
+}
+
+.reserve__form_button{
+	background-color: rgba(0, 0, 0, 0);
+	width: 212px;
+	height: 62px;
+	box-sizing: border-box;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 2px;
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 20%;
+	text-align: center;
+	margin-top: 150px;
+	position: relative;
+}
+.reserve__form_button:hover{
+	color: rgb(43, 72, 76);
+	background-color: #fff;
+	transition: 0.3s;
+}
+.reserve__form_button_decor{
+	width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    bottom: -10px;
+    right: -8px;
+}
+
+/*---reserve end---*/
+
+.header{
+    background: url('../img/restoraunt/header/bg.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 343px;
+    min-height: 100vh;
+}
+
+.header__logo{
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header__title{
+    color: rgb(255, 255, 255);
+    font-family: Arimo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 20%;
+    margin-bottom: 19px;
+}
+
+.header__decorline{
+    border: 1px solid rgb(255, 255, 255);
+    width: 58px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.header__description{
+    color: rgb(255, 255, 255);
+    font-family: Arimo;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 15%;
+    max-width: 559px;
+}
+
+
+
+
+
+
+
+.block{
+    margin-top: 145px;
+}
+
+.block__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.block__text_title{
+    color: rgb(151, 243, 255);
+    font-family: Arimo;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 15%;
+    text-align: left;
+    max-width: 318px;
+    margin-bottom: 100px;
+}
+
+.block__text_description{
+    color: rgb(255, 255, 255);
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 15%;
+    text-align: left;
+    max-width: 530px;
+}
+
+.block__image{
+    position: relative;
+}
+
+.block__imege_decor{
+    border: 3px solid rgb(151, 243, 255);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -11px;
+    left: -24px;
+    z-index: -1;
+}
+
+.block__imege_decor_inversion{
+    border: 3px solid rgb(151, 243, 255);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -22px;
+    right: -25px;
+    z-index: -1;
+}
+
+.block__text_link a{
+    padding: 22px 47px;
+    border: 2px solid rgb(151, 243, 255);
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    font-family: Arimo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 15%;
+    text-align: left;
+}
+.block__text_link a:hover{
+    background-color: rgb(151, 243, 255);
+    transition: 0.3s;
+}
+.block__text_link{
+    margin-top: 177px;
+    position: relative;
+    display: inline-block;
+}
+.block__text_link_decor{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(151, 243, 255);
+    border-right: 1px solid rgb(151, 243, 255);
+    position: absolute;
+    bottom: -28px;
+    right: -4px;
+}
+
+
+
+
+.slider{
+    margin-top: 145px;
+}
+
+.slider__container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    padding-top: 159px;
+    margin-top: 200px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(159, 159, 159);
+    position: relative;
+}
+
+.footer__title{
+    color: rgb(255, 255, 255);
+    font-family: BIZ UDPMincho;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 19%;
+    margin-bottom: 82px;
+}
+
+.footer__information_row{
+    display: flex;
+}
+
+.footer__information_genral{
+    margin-right: 156px;
+}
+
+.footer__information_name{
+    color: rgb(153, 153, 153);
+        font-family: Arimo;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        max-width: 370px;
+        margin-bottom: 33px;
+}
+
+.footer__information_country{
+    color: rgb(153, 153, 153);
+        font-family: Arimo;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 3px;
+}
+
+.footer__information_text{
+    color: rgb(153, 153, 153);
+        font-family: Arimo;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
+}
+
+.footer__information{
+    margin-bottom: 25px;
+}
+
+.footer__social_row{
+    display: flex;
+}
+
+.footer__social_vk{
+    margin-right: 20px;
+}
+
+.footer__toplink_row{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.footer__toplink_arrow{
+    margin-bottom: 16px;
+}
+
+.footer__toplink_text{
+    color: rgb(151, 243, 255);
+        font-family: Arimo;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 15%;
+        text-align: left;
+}
+
+.footer__toplink{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

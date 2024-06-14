@@ -1,0 +1,349 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BIZ+UDPMincho&display=swap');
+
+/*---index start---*/
+
+body{
+	width: 100%;
+	height: 100vh;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*---reserve start---*/
+
+.reserve__button_wrapper{
+	position: absolute;
+	left: 47px;
+	top: 56px;
+	z-index: 100;
+}
+.reserve__button_image{
+	margin-right: 25px;
+}
+.reserve__button_row{
+	display: flex;
+	align-items: center;
+}
+.reserve__button_text{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 5%;
+}
+
+.reserve{
+	position: absolute;
+	z-index: 100;
+	padding: 31px 35px;
+	background-color: rgb(43, 72, 76);
+	max-width: 813px;
+	height: 100vh;
+	left: -813px;
+	transition: 0.7s;
+}
+
+.header.open .reserve{
+	transform: translateX(100%);
+}
+
+.reserve__column{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+
+.reserve__title{
+	margin-bottom: 38px;
+	display: flex;
+	align-items: center;
+}
+.reserve__title p{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 4px;
+	margin-right: 280px;
+}
+
+.reserve__subtitle{
+	margin-bottom: 67px;
+}
+.reserve__subtitle p{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 3px;
+	
+}
+
+
+.reserve__form_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.reserve__label{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 3px;
+	text-align: left;
+	margin-bottom: 9px;
+}
+.reserve__input_main{
+	border-radius: 3px;
+	background: rgb(218, 251, 255);
+	padding: 9px 11px;
+	color: black;
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 11px;
+	text-align: left;
+	width: 595px;
+	margin-bottom: 37px;
+}
+.reserve__input_double{
+	border-radius: 3px;
+	background: rgb(218, 251, 255);
+	padding: 9px 11px;
+	color: black;
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 11px;
+	text-align: left;
+	width: 280px;
+	margin-bottom: 37px;
+	margin-right: 35px;
+}
+.reserve__input_double:last-child{
+	margin-right: 0;
+}
+
+.reserve__form_button{
+	background-color: rgba(0, 0, 0, 0);
+	width: 212px;
+	height: 62px;
+	box-sizing: border-box;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 2px;
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 20%;
+	text-align: center;
+	margin-top: 150px;
+	position: relative;
+}
+.reserve__form_button:hover{
+	color: rgb(43, 72, 76);
+	background-color: #fff;
+	transition: 0.3s;
+}
+.reserve__form_button_decor{
+	width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    bottom: -10px;
+    right: -8px;
+}
+
+/*---reserve end---*/
+
+
+
+
+
+
+
+
+
+.header__bg{
+	width: 105%;
+	height: 105%;
+	background: url(../img/index/bg.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.header__logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	left: 43%;
+	top: 35%;
+	z-index: 10;
+	pointer-events: none;
+}
+.header__logo_name p{
+	color: rgb(255, 255, 255);
+	font-family: BIZ UDPMincho;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+.header__logo_description{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.header__gradient{
+	width: 200%;
+	height: 200vh;
+	position: absolute;
+	background: linear-gradient(135.00deg, rgba(0, 0, 0, 0.3) 0.045%,rgba(0, 0, 0, 0.13) 99.955%);
+}
+
+.header__link_restaurant{
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	transform: translate(0,-50px);
+	display: flex;
+	align-items: center;
+}
+.header__link_restaurant img{
+	margin-right: 15px;
+}
+.header__link_restaurant a{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 5%;
+	text-align: center;
+}
+
+.header__link_team{
+	position: absolute;
+	top: 50%;
+	right: 40px;
+	transform: translate(0,-50px);
+	display: flex;
+	align-items: center;
+}
+.header__link_team a:first-child{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 5%;
+	text-align: center;
+	margin-right: 15px;
+}
+
+.header__link_menu{
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__link_menu a:first-child{
+	color: rgb(255, 255, 255);
+	font-family: Arimo;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 5%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.header__social{
+	position: absolute;
+	bottom: 36px;
+	left: 40px;
+}
+.header__social_row{
+	display: flex;
+	align-items: center;
+}
+.header__social_link:first-child{
+	margin-right: 20px;
+}
+.header__social_link a img{
+	width: 27px;
+}
+
+
+/*---index end---*/
